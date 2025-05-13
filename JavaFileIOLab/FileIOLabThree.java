@@ -1,0 +1,48 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class FileIOLabThree {
+    public static void main(String[] args) {
+        System.out.println("Java File I/O Lab");
+        writeFile("output.txt", "Hello, Java!");
+        readFile("input.txt");
+    }
+
+    public static void readFile(String filename) {
+        BufferedReader reader = null;
+        try {
+            reader = new BufferedReader(new FileReader(filename));
+            String line;
+            while ((line = reader.readLine()) != null) {
+                System.out.println(line);
+            }
+        } catch (IOException e) {
+            System.err.println("Error reading file: " + e.getMessage());
+        } finally {
+            try {
+                if (reader != null) reader.close();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
+
+    public static void writeFile(String filename, String content) {
+        FileWriter writer = null;
+        try {
+            writer = new FileWriter(filename);
+            writer.write(content);
+        } catch (IOException e) {
+            System.err.println("Error writing to file: " + e.getMessage());
+        } finally {
+            try {
+                if (writer != null) writer.close();
+            } catch (IOException ex) {
+                ex.printStackTrace();
+            }
+        }
+    }
+}
+
