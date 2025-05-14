@@ -1,0 +1,4 @@
+com/example/App.class
+com/example/exception/InventoryException.class
+com/example/model/Book.class
+com/example/service/BookInventory.class
