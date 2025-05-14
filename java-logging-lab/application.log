@@ -1,0 +1,6 @@
+May 14, 2025 2:52:48 PM FileLogging main
+INFO: This is an info message
+May 14, 2025 2:52:48 PM FileLogging main
+WARNING: This is a warning message
+May 14, 2025 2:52:48 PM FileLogging main
+SEVERE: This is a severe error message
