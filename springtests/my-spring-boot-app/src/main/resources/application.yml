@@ -1,0 +1,5 @@
+server:
+  port: 2224
+app:
+  name: ExampleSpringBootApp
+
