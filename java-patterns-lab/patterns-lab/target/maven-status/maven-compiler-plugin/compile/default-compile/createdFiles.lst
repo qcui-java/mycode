@@ -1,0 +1,7 @@
+com/example/exception/PatternException.class
+com/example/factory/Shape.class
+com/example/App.class
+com/example/factory/ShapeFactory.class
+com/example/factory/Rectangle.class
+com/example/factory/Circle.class
+com/example/singleton/ConfigurationManager.class
